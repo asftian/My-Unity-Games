@@ -3,11 +3,14 @@ using System.Collections;
 
 public class CubeController : MonoBehaviour {
 
-    private float speed = 0.2f;
+    //private float speed = 0.2f;
+	public float speed = 0.02f;
+
+	private Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
-	
+		rb = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
@@ -23,9 +26,14 @@ public class CubeController : MonoBehaviour {
         //transform.Rotate(45, 45, 45);
         //transform.Rotate(45 * Time.deltaTime, 45 * Time.deltaTime, 45 * Time.deltaTime);
 
-        ControlByArrowKeys();
-        ControlByArrowKeys(speed);
+        //ControlByArrowKeys();
+        //ControlByArrowKeys(speed);
 	
+	}
+
+	void FixedUpdate()
+	{
+		ControlByArrowKeys (speed);
 	}
 
     void ControlByArrowKeys()
@@ -41,6 +49,7 @@ public class CubeController : MonoBehaviour {
         float xMove = Input.GetAxis("Horizontal") * speed;
         float zMove = Input.GetAxis("Vertical") * speed;
 
-        transform.Translate(xMove, 0.0f, zMove);
+        //transform.Translate(xMove, 0.0f, zMove);
+		rb.AddForce (xMove, 0.0f, zMove);
     }
 }
