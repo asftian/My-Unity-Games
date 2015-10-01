@@ -1,10 +1,11 @@
 #################
 ## Unity
 #################
+*.sln
+*.userprefs
+*.csproj
 Library/
 Build/
-*.meta
-
 
 #################
 ## Eclipse
