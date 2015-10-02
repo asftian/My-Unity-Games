@@ -1,12 +1,21 @@
 # =============== #
 # Unity generated #
 # =============== #
-[Tt]emp/
+
+# [Tt]emp/
+# [Oo]bj/
+# [Bb]uild
+# [Ll]ibrary/
+#sysinfo.txt
+#*.stackdump
+
+Library/FailedAssetImports.txt
+Library/cache/
+Library/ShaderCache/*.*
+Library/previews/
+Library/ScriptAssemblies
 [Oo]bj/
 [Bb]uild
-[Ll]ibrary/
-sysinfo.txt
-*.stackdump
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
