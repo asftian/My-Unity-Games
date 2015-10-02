@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\My-Space-Shooter\Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\My-Space-Shooter\Assets\Scripts\Mover.cs">
     <Files>
-      <File FileName="..\My-Space-Shooter\Assets\Scripts\PlayerController.cs" Line="23" Column="20" />
+      <File FileName="..\My-Space-Shooter\Assets\Scripts\Mover.cs" Line="17" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
