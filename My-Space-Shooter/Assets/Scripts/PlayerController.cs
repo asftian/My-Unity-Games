@@ -28,7 +28,9 @@ public class PlayerController : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetButton("Fire1") && Time.time > nextFire) // 'Fire 1' is the left mouse button
+		//if (Input.GetButton("Fire1") && Time.time > nextFire) // 'Fire 1' is the left mouse button
+
+		if (Input.GetKeyDown ("space") && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 			// GameObject clone = 
